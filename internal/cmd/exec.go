@@ -74,7 +74,7 @@ func execCommand() *cobra.Command {
 
 			// If no file was piped and no args, then print help and exit
 			if len(args) == 0 && execOpts.ExecLine == "" {
-				return cmd.Help() //nolint
+				return cmd.Help()
 			}
 
 			// Case 1: Run snippet from the --execute flag

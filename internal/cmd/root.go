@@ -26,9 +26,8 @@ func rootCommand() *cobra.Command {
 		Version:           version.GetVersionInfo().GitVersion,
 		PersistentPreRunE: initLogging,
 		RunE: func(cmd *cobra.Command, args []string) error {
-			return cmd.Help() //nolint
+			return cmd.Help()
 		},
-		// SilenceErrors:              false,
 		SilenceUsage: false,
 	}
 
