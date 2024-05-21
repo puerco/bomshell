@@ -7,13 +7,13 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/bom-squad/protobom/pkg/sbom"
 	"github.com/google/cel-go/cel"
 	"github.com/google/cel-go/common/types"
 	"github.com/google/cel-go/common/types/ref"
+	"github.com/protobom/protobom/pkg/sbom"
 )
 
-var DocumentType = cel.ObjectType("bomsquad.protobom.Document")
+var DocumentType = cel.ObjectType("protobom.protobom.Document")
 
 type Document struct {
 	*sbom.Document

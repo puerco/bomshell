@@ -26,11 +26,10 @@ func (shellLibrary) CompileOptions() []cel.EnvOption {
 		cel.Variable("sboms", cel.MapType(cel.IntType, elements.DocumentType)),
 		cel.Variable("sbom", elements.DocumentType),
 		cel.Variable("bomshell", elements.BomshellType),
-
 		cel.Function(
 			"files",
 			cel.MemberOverload(
-				"sbom_files_binding", []*cel.Type{cel.ObjectType(protoDocumentType)}, elements.NodeListType,
+				"sbom_files_binding", []*types.Type{elements.DocumentType}, elements.NodeListType,
 				cel.UnaryBinding(functions.Files),
 			),
 			cel.MemberOverload(
@@ -46,7 +45,7 @@ func (shellLibrary) CompileOptions() []cel.EnvOption {
 		cel.Function(
 			"packages",
 			cel.MemberOverload(
-				"sbom_packages_binding", []*cel.Type{cel.ObjectType(protoDocumentType)}, elements.NodeListType,
+				"sbom_packages_binding", []*cel.Type{elements.DocumentType}, elements.NodeListType,
 				cel.UnaryBinding(functions.Packages),
 			),
 			cel.MemberOverload(
@@ -74,7 +73,7 @@ func (shellLibrary) CompileOptions() []cel.EnvOption {
 			"ToNodeList",
 			cel.MemberOverload(
 				"document_tonodelist_binding",
-				[]*cel.Type{cel.ObjectType(protoDocumentType)}, elements.NodeListType,
+				[]*cel.Type{elements.DocumentType}, elements.NodeListType,
 				cel.UnaryBinding(functions.ToNodeList),
 			),
 			cel.MemberOverload(
@@ -224,6 +223,7 @@ func createEnvironment(opts *Options) (*cel.Env, error) {
 		ext.Bindings(),
 		ext.Strings(),
 		ext.Encoders(),
+		cel.Types(elements.DocumentType),
 	}
 
 	// Add any additional environment options passed in the construcutor

@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/bom-squad/protobom/pkg/sbom"
 	"github.com/chainguard-dev/bomshell/pkg/elements"
 	"github.com/chainguard-dev/bomshell/pkg/loader"
 	"github.com/google/cel-go/common/types"
 	"github.com/google/cel-go/common/types/ref"
+	"github.com/protobom/protobom/pkg/sbom"
 	"google.golang.org/protobuf/types/known/timestamppb"
 	"sigs.k8s.io/release-utils/version"
 )

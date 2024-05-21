@@ -7,16 +7,15 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/bom-squad/protobom/pkg/formats"
 	"github.com/chainguard-dev/bomshell/pkg/elements"
 	"github.com/google/cel-go/cel"
 	"github.com/google/cel-go/common/types/ref"
+	"github.com/protobom/protobom/pkg/formats"
 	"github.com/sirupsen/logrus"
 )
 
 const (
-	protoDocumentType = "bomsquad.protobom.Document"
-	DefaultFormat     = formats.SPDX23JSON
+	DefaultFormat = formats.SPDX23JSON
 )
 
 type Options struct {

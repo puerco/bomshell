@@ -6,8 +6,8 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/bom-squad/protobom/pkg/formats"
 	"github.com/chainguard-dev/bomshell/pkg/shell"
+	"github.com/protobom/protobom/pkg/formats"
 	"github.com/spf13/cobra"
 	"sigs.k8s.io/release-utils/log"
 )

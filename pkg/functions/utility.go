@@ -4,8 +4,8 @@
 package functions
 
 import (
-	"github.com/bom-squad/protobom/pkg/sbom"
 	"github.com/chainguard-dev/bomshell/pkg/elements"
+	"github.com/protobom/protobom/pkg/sbom"
 	"github.com/sirupsen/logrus"
 )
 

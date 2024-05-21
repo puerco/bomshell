@@ -95,7 +95,7 @@ bomshell recipes are written in CEL
 making the runtime small and embeddable in other applications.
 
 The backing library of Bomshell is 
-[`protobom` the universal Software Bill of Materials I/O library ](https://github.com/bom-squad/protobom).
+[`protobom` the universal Software Bill of Materials I/O library ](https://github.com/protobom/protobom).
 The bomshell runtime reads SBOMs and exposes the protobom
 data graph to the CEL environment, emulating some methods and adding
 some of its own.

@@ -11,12 +11,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/bom-squad/protobom/pkg/reader"
-	"github.com/bom-squad/protobom/pkg/sbom"
-	"github.com/bom-squad/protobom/pkg/writer"
 	"github.com/chainguard-dev/bomshell/pkg/elements"
 	"github.com/google/cel-go/cel"
 	"github.com/google/cel-go/common/types/ref"
+	"github.com/protobom/protobom/pkg/reader"
+	"github.com/protobom/protobom/pkg/sbom"
+	"github.com/protobom/protobom/pkg/writer"
 )
 
 type BomshellImplementation interface {

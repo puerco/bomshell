@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/bom-squad/protobom/pkg/sbom"
 	"github.com/chainguard-dev/bomshell/pkg/elements"
 	"github.com/google/cel-go/common/types"
 	"github.com/google/cel-go/common/types/ref"
+	"github.com/protobom/protobom/pkg/sbom"
 	"github.com/stretchr/testify/require"
 )
 

@@ -8,8 +8,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/bom-squad/protobom/pkg/reader"
-	"github.com/bom-squad/protobom/pkg/sbom"
+	"github.com/protobom/protobom/pkg/reader"
+	"github.com/protobom/protobom/pkg/sbom"
 )
 
 func ReadSBOM(stream io.ReadSeekCloser) (*sbom.Document, error) {

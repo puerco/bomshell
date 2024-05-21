@@ -7,16 +7,16 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/bom-squad/protobom/pkg/sbom"
 	"github.com/google/cel-go/cel"
 	"github.com/google/cel-go/checker/decls"
 	"github.com/google/cel-go/common/types"
 	"github.com/google/cel-go/common/types/ref"
+	"github.com/protobom/protobom/pkg/sbom"
 )
 
 var (
-	NodeListObject = decls.NewObjectType("bomsquad.protobom.NodeList")
-	NodeListType   = cel.ObjectType("bomsquad.protobom.NodeList")
+	NodeListObject = decls.NewObjectType("protobom.protobom.NodeList")
+	NodeListType   = cel.ObjectType("protobom.protobom.NodeList")
 )
 
 type NodeList struct {
