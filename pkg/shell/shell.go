@@ -141,7 +141,7 @@ func (bs *Bomshell) PrintResult(result ref.Val, w io.WriteCloser) error {
 		}
 		return nil
 	default:
-		fmt.Printf("TMPRENDER:\nvalue: %v (%T)\n", result.Value(), result)
+		fmt.Printf("Results:\nvalue: %v (%T)\n", result.Value(), result)
 		return nil
 	}
 }

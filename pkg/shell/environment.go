@@ -12,6 +12,7 @@ import (
 	"github.com/google/cel-go/common/types"
 	"github.com/google/cel-go/common/types/ref"
 	"github.com/google/cel-go/ext"
+	"github.com/protobom/protobom/pkg/sbom"
 	// "github.com/google/cel-go/common/operators"
 	// "github.com/google/cel-go/common/types/traits"
 	// celfuncs "github.com/google/cel-go/interpreter/functions"
@@ -23,6 +24,11 @@ type shellLibrary struct{}
 // use to compile and evaluate programs on the SBOM
 func (shellLibrary) CompileOptions() []cel.EnvOption {
 	return []cel.EnvOption{
+		cel.Types(&sbom.Document{}),
+		cel.Types(&sbom.Document{}),
+		cel.Types(&sbom.NodeList{}),
+		cel.Types(&sbom.Node{}),
+
 		cel.Variable("sboms", cel.MapType(cel.IntType, elements.DocumentType)),
 		cel.Variable("sbom", elements.DocumentType),
 		cel.Variable("bomshell", elements.BomshellType),
