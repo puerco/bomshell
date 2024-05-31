@@ -7,7 +7,7 @@ toolchain go1.22.1
 require (
 	github.com/charmbracelet/bubbletea v0.26.3
 	github.com/charmbracelet/lipgloss v0.11.0
-	github.com/protobom/protobom v0.4.1
+	github.com/protobom/protobom v0.4.2
 	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/cobra v1.8.0
 	github.com/stretchr/testify v1.9.0
