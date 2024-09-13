@@ -1,8 +1,7 @@
 module github.com/chainguard-dev/bomshell
 
 go 1.22.0
-
-toolchain go1.22.1
+toolchain go1.23.1
 
 require (
 	github.com/charmbracelet/bubbletea v0.26.6
@@ -11,7 +10,7 @@ require (
 	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/cobra v1.8.1
 	github.com/stretchr/testify v1.9.0
-	sigs.k8s.io/release-utils v0.8.2
+	sigs.k8s.io/release-utils v0.8.5
 )
 
 require (
